@@ -124,6 +124,16 @@ public class UserDaoJdbcImp implements UserDao {
         user.isMarriage(),
         user.getUserId());
 
+        // if (rowNumber > 0) {
+        //     throw new DataAccessException("トランザクションテスト") {
+
+        //         /**
+        //          *
+        //          */
+        //         private static final long serialVersionUID = 6616557945082519941L;
+        //     };
+        // }
+
         return rowNumber;
     }
 
