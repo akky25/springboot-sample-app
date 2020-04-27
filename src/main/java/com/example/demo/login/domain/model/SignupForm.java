@@ -2,7 +2,6 @@ package com.example.demo.login.domain.model;
 
 import java.util.Date;
 
-import javax.validation.constraints.AssertFalse;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -49,6 +48,6 @@ public class SignupForm {
     @Max(value=100, groups=ValidGroup2.class)
     private int age;
 
-    @AssertFalse(groups=ValidGroup2.class)
+    // @AssertFalse(groups=ValidGroup2.class)
     private boolean marriage;
 }
