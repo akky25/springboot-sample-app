@@ -171,6 +171,14 @@ public class HomeController {
           return new ResponseEntity<>(bytes, header, HttpStatus.OK);
      }
 
+     // アドミン権限用画面のGET用メソッド
+     @GetMapping("/admin")
+     public String getAdmin(Model model) {
+          
+          model.addAttribute("contents", "login/admin :: admin_contents");
+          return "login/homeLayout";
+     }
+
      // ログアウト用POSTメソッド
      @PostMapping("/logout")
      public String postLogout() {
